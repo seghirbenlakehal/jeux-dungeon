@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roguelike Dungeon</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+   
+    <div class="welcome-text">Bienvenue dans mon Dungeon!</div>
+
+
+    <table id="game-grid"></table>
+    <div class="controls">
+        <button onclick="movePlayer('↑')">↑</button>
+        <button onclick="movePlayer('↓')">↓</button>
+        <button onclick="movePlayer('←')">←</button>
+        <button onclick="movePlayer('→')">→</button>
+        <button onclick="location.reload()">Recommencer</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

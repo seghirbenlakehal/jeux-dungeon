@@ -1,0 +1,58 @@
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+body {
+    background-color: #ffffff; 
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome-text {
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    color: #FFD700; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: shadowChange 3s infinite;
+}
+
+@keyframes shadowChange {
+    0%, 100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        text-shadow: -2px -2px 4px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.player {  background-color: transparent; 
+    background-image: url('prince.jpg');
+    background-size: cover; }
+.monster {
+    background-color: transparent; 
+    background-image: url('monstre.avif');
+    background-size: cover;
+}
+.treasure { background-color: transparent; 
+    background-image: url('tresor.jpg');
+    background-size: cover; }
+.empty { background-color: black; }
+.wall { background-color: gray; }
+
+
+.controls {
+    margin-top: 10px;
+}
+.controls button {
+    font-size: 16px;
+    margin: 5px;
+}
